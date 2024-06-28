@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de Safari</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Reseñas de Safari</h1>
+
+    <h2>Dejar Comentario</h2>
+
+
+    <!--     Formulario para crear un nuevo posteo -->
+    <form id="form-crear-posteo">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br>
+        <label for="paquete">Paquete</label>
+        <select name="paquete" id="paquete" required>
+            <option value="Rojo">Rojo</option>
+            <option value="Naranja">Naranja</option>
+            <option value="Violeta">Voleta</option>
+        </select>
+        <br />
+        <label for="valoracion">Valoracion</label>
+        <select name="valoracion" id="valoracion" required>
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★</option>
+            <option value="3">★★★</option>
+            <option value="2">★★</option>
+            <option value="1">★</option>
+        </select>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario"></textarea>
+        <br>
+        <button type="submit">Enviar Comentario</button>
+    </form>
+
+    <!--      tabla para mostrar los posteos  -->
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Nombre</th>
+                <th>Paquete</th>
+                <th>Valoracón</th>
+                <th>Comentario</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="body-tabla-posteos">
+        </tbody>
+    </table>
+
+
+    <!-- AXIOS desde CDN: https://axios-http.com/es/docs/intro -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

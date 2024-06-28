@@ -1,0 +1,19 @@
+{
+  "name": "koala_safari",
+  "version": "0.0.1",
+  "description": "Comentarios y reseñas del Koala-Safari",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CaC 24125 - GrupoDiec8cho",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.1",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

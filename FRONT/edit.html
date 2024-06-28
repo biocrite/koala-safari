@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Reseñas de Safari</h1>
+
+    <h2>Editar Comentario</h2>
+
+    <form id="form-editar-posteo">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br>
+        <label for="paquete">Paquete</label>
+        <input type="text" name="paquete" id="paquete" required>
+        <br />
+        <label for="valoracion">Valoracion</label>
+        <input type="text" name="valoracion" id="valoracion" required>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario"></textarea>
+        <br>
+        <button type="submit">Edtar Comentario</button>
+    </form>
+
+
+        <!-- AXIOS desde CDN: https://axios-http.com/es/docs/intro -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <script src="./edit.js"></script>
+
+</body>
+
+</html>

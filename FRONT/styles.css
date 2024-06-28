@@ -1,0 +1,16 @@
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+table {
+    max-width: 80%;
+    margin: auto;
+}
