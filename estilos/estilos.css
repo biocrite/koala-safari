@@ -14,3 +14,8 @@ table {
     max-width: 80%;
     margin: auto;
 }
+
+table td {
+    padding: 10px;
+    text-align: center;
+}

@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 celdaFecha.textContent = posteo.fecha;
                 celdaNombre.textContent = posteo.nombre;
                 celdaPaquete.textContent = posteo.paquete;
-                celdaValoracion.textContent = posteo.valoracion;
+                celdaValoracion.textContent = posteo.valoracion + " / 5";
                 celdaComentario.textContent = posteo.comentario;
 
 
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             await axios.post(`http://localhost:3030/posteos/`,nuevoComentario);
-            //formNuevoComentario.reset();
+            formNuevoComentario.reset();
             fetchComentarios();
             console.log("enviando!");
         } catch (error) {
@@ -119,4 +119,3 @@ document.addEventListener("DOMContentLoaded", () => {
     //llamar a la funcion para obtener y mostrar los posteos al cargar la pagina
     fetchComentarios();
 })
-

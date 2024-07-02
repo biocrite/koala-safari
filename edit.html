@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseñas de Safari</title>
+    <title>Reseñas de Koala Safari - Edición</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
 
 </head>
 
 <body>
-    <h1>Reseñas de Safari</h1>
 
-    <h2>Dejar Comentario</h2>
+    <h1>Reseñas de Koala Safari</h1>
 
+    <h2>Editar Comentario</h2>
 
-    <!--     Formulario para crear un nuevo posteo -->
-    <form id="form-crear-posteo">
+    <!--Formulario para editar el comentario-->
+    <form id="form-editar-posteo">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre" required>
         <br>
@@ -25,7 +25,7 @@
         <select name="paquete" id="paquete" required>
             <option value="Rojo">Rojo</option>
             <option value="Naranja">Naranja</option>
-            <option value="Violeta">Voleta</option>
+            <option value="Violeta">Violeta</option>
         </select>
         <br />
         <label for="valoracion">Valoracion</label>
@@ -40,30 +40,14 @@
         <label for="comentario">Comentario</label>
         <textarea name="comentario" id="comentario"></textarea>
         <br>
-        <button type="submit">Enviar Comentario</button>
+        <button type="submit">Edtar Comentario</button>
     </form>
 
-    <!--      tabla para mostrar los posteos  -->
-    <table>
-        <thead>
-            <tr>
-                <th>Fecha</th>
-                <th>Nombre</th>
-                <th>Paquete</th>
-                <th>Valoracón</th>
-                <th>Comentario</th>
-                <th>Opciones</th>
-            </tr>
-        </thead>
-        <tbody id="body-tabla-posteos">
-        </tbody>
-    </table>
 
+        <!-- AXIOS -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <!-- AXIOS desde CDN: https://axios-http.com/es/docs/intro -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-    <script src="./index.js"></script>
+        <script src="js/edit.js"></script>
 
 </body>
 
