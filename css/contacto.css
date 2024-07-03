@@ -1,0 +1,79 @@
+@import url("pages.css");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑    Estilos básicos y para móvil      ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+.first-fields-container {
+    background-color: var(--boxy-bgcolor);
+    border: var(--boxy-border);
+    border-radius: var(--border-radius);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.form,
+.form div {
+    text-align: center;
+    display: block;
+}
+
+.form div * {
+    margin: 1rem auto;
+}
+
+input, select {
+    text-align: center;
+}
+
+input:not([type=checkbox]):not([type=image]),
+select,
+textarea {
+    display: block;
+    border-radius: var(--border-radius);
+    padding: .5rem;
+    font-size: 1.25rem;
+    min-width: 80%;
+    font-family: "Kalam";
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .1rem;
+}
+
+label,
+legend,
+.label-like {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.obligatorymarker {
+    color: rgb(222, 76, 76);
+    font-size: smaller;
+    display: none;
+}
+
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑    Para pantallas más grandes (compus y tablets)      ⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+@media screen and (800px <= width) {
+    .form .first-fields-container {        
+        display: flex;    }
+    .form .first-fields-container div {
+        flex: 1;
+    }
+    .form .first-fields-container figure {
+        flex: .5;
+        padding-left: 1rem;
+        margin: auto;
+        margin-top: 3rem;
+
+    }
+    .first-fields input {
+        width: 75%;
+    }
+
+}

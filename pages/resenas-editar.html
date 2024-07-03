@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Mundia - Reseñas de Safari</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/safari.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper" id="wrapper">
+
+        <header></header>
+
+
+        <main>
+            <h1>Reseñas de Koala Safari</h1>
+
+            <h2>Editar Comentario</h2>
+        
+            <!--Formulario para editar el comentario-->
+            <form id="form-editar-resena">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <br>
+                <label for="paquete">Paquete</label>
+                <select name="paquete" id="paquete" required>
+                    <option value="Rojo">Rojo</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Violeta">Violeta</option>
+                </select>
+                <br />
+                <label for="valoracion">Valoracion</label>
+                <select name="valoracion" id="valoracion" required>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+                <br>
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario"></textarea>
+                <br>
+                <div class="formbuttons">
+                    <input type="image" id="enviador" class="btn-img" alt="Enviar" src="/img/btn-enviar.svg">
+                </div>
+                        </form>
+
+        </main>
+
+
+        <footer></footer>
+
+    </div>
+
+    <script src="/js/main.js"></script>
+
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="/js/resenas-editar.js"></script>
+
+</body>
+
+</html>

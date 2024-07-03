@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑   "Skin"    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+:root {
+    --body-bgcolor: white;
+    --body-color: black;
+    --texto-color2: darkslategray; /* submenu, h1 & footer */
+    --texto-color3: rgb(99, 98, 98); /* h2 */
+
+    font-size: 18px;
+    --box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.2);
+    --border-radius: 1rem;
+
+    --navmenu-mobile-bgcolor: rgb(248, 166, 180);
+    
+    --main-bgcolor: rgb(178, 255, 255);
+    --main-border: .15rem solid goldenrod;
+    
+    --galeria-item-bgcolor1: cyan;
+    --galeria-item-bgcolor2: purple;
+    --galeria-item-hover-bgcolor: plum;
+    --galeria-item-hover-color: white;
+
+    --boxy-bgcolor: lightgoldenrodyellow;
+    --boxy-border: .15rem solid darkred;
+
+}
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑   Estilos básicos universales (mobile-first) ⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bgcolor);
+    color: var(--body-color);
+    padding: 1.5%;
+}
+
+body, .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: auto;
+    font-family: "Roboto Slab", serif;
+    font-weight: 380;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: .05rem;
+    text-align: left;
+}
+
+.invisible {
+    visibility: hidden;
+}
+.clickable {
+    cursor: pointer;
+}
+.onlyBigScreens {
+    display: none;
+}
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Header (navbar) & Footer    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+/* Header */
+.header {
+    text-align: center;
+}
+.header-image-hamburguesa {
+    display: flex;
+    flex-direction: row;
+}
+.headerImage {
+    width: 100%;
+}
+#navBarExpander {
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 2.5rem;
+    text-align: right;
+    margin: 0 2.5% 0 0;
+    padding: 0;
+    z-index: 5;
+}
+
+/* Navbar */
+.navmenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding: 8% 0;
+    display: none;
+    background-color: var(--navmenu-mobile-bgcolor);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    transition-duration: 500ms;
+    font-size: larger;
+    list-style: none;
+    z-index: 5;
+    overflow-y: scroll;
+}
+.navmenu li:hover{
+    transform: scale(1.03);
+    z-index: 5;
+}
+.navmenu li:hover .subnavmenu{
+    transform: scale(.98);
+    z-index: 5;
+}
+.navmenu li img {
+    max-height: 2em;
+    max-width: 2em;
+    margin: -5% 0;
+    padding-right: 0%;
+}
+.subnavmenu {
+    list-style: none;
+    padding: 0;
+    font-size: medium;
+}
+.subnavmenu li a {
+    color: var(--texto-color2);
+}
+
+
+/* Header & Footer enlaces */
+header a,
+footer a{
+    text-decoration: none;
+    color: var(--body-color);
+    cursor: pointer;
+}
+
+header a:hover,
+footer a:hover {
+    color: darkgoldenrod;
+    transition-duration: 300ms;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: smaller;
+    color: var(--texto-color2);
+}
+footer a {
+    font-weight:400;
+}
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Main    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem .5rem;
+    background-color: var(--main-bgcolor);
+    border: var(--main-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑    Dimmer    ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+#dimmer {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+    display:none;
+}
+#dimmer figure {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+    justify-content: center;
+    font-size: clamp(.8rem, 3.5vw, 2rem);
+    margin: 1rem;
+}
+#dimmer figure img {
+    width: 90%;
+    max-height: 80%;
+    padding: 1%;
+    border-radius: var(--border-radius);
+    object-fit:contain;
+}
+#dimmer figure figcaption {
+    color: white;
+    padding: 2%;
+}
+
+.dimmerBGkiller {
+    cursor: pointer;
+    text-align: right;
+    width: 90%;
+}
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑  Media Query para tablets y Escritorios ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+/* Celulares */
+@media screen and (width <=480px) {}
+
+/* Tablets */
+@media screen and (480px < width <= 800px) {}
+
+/* escritorios */
+@media screen and (800px < width) {
+    .onlySmallScreens {
+        display: none;
+    }
+    .headerImage {
+        padding-right: unset;
+    }
+
+    .navmenu .onlyBigScreens {
+        display: flex;
+    }
+
+    .navmenu {
+        /* Resetear valores de navbar mobile-first */
+        height: unset;
+        width: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+        background-color: unset;
+        align-items: unset;
+        text-align: unset;
+        font-size: unset;
+        padding: 1em 0 0 0;
+        overflow: unset;
+        display: flex!important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        justify-content: space-evenly;
+        letter-spacing: 1px;
+
+    }
+    .navmenu li {
+        padding: 0;
+    }
+
+    .subnavmenu {
+        position: absolute;
+        margin-left: -5%;
+        background-color: var(--body-bgcolor);
+        border: 1px solid black;
+        border-top: 0;
+        text-align: center;
+        display: none;
+        border-radius: 0 0 4px 4px;
+        z-index: 5;
+        padding: .5rem;
+        min-width: 200%;
+    }
+
+    .subnavmenu li {
+        padding: .5rem;
+    }
+
+    .navmenu li:hover .subnavmenu {
+        display: inherit;
+    }
+
+    .menuheader::after {
+        content: " ▾";
+    }
+
+}

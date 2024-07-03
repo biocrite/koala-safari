@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Mundia - Contacto</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper" id="wrapper">
+
+        <header></header>
+
+
+        <main>
+            <h1>Contacto</h1>
+            <p class="centrado">Puedes contactarte mediante el siguiente formulario.<br>
+                ¡Acuérdate de rellenar todos los campos!</p>
+
+            <form class="form" name="formie" id="formie" action="/pages/formulario-enviado.html" method="get">
+
+                <div class="first-fields-container">
+
+                    <figure>
+                        <img src="/img/koala-form.png" width="200" alt="Koalascritura">
+                    </figure>
+
+                    <div class="first-fields">
+
+                        <div class="formitem">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Koa" required>
+                            <span class="obligatorymarker">Campo obligatorio.</span>
+                        </div>
+
+                        <div class="formitem">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Lalova" required>
+                            <span class="obligatorymarker">Campo obligatorio.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="formitem">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="orejona@eucalipto.au" value="" required>
+                    <span class="obligatorymarker">Campo obligatorio.</span>
+                </div>
+                <div class="formitem">
+                    <label for="origen">¿Cómo nos conociste?</label>
+
+                    <select name="origen" id="origen" required>
+                        <option value="">--Elige una opción--</option>
+                        <option value="Vi algo en internet.">Vi algo en internet.</option>
+                        <option value="Alguien me contó.">Alguien me contó.</option>
+                        <option value="No recuerdo.">No recuerdo.</option>
+                    </select>
+                    <span class="obligatorymarker">Campo obligatorio.</span>
+
+                </div>
+
+                <div class="formitem">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" required rows="4"></textarea>
+                    <span class="obligatorymarker">Campo obligatorio.</span>
+                </div>
+
+                <div class="formitem">
+                    <p class="label-like">¿Eres koala-amante?</p>
+                    <input type="checkbox" name="koala-amante" id="koala-amante" style="display:inline;">
+                    <label for="koala-amante" style="display:inline; font-weight: unset;">¡Claro que sí!</label>
+                </div>
+
+                <div class="formbuttons">
+                    <input type="image" id="enviador" class="btn-img" alt="Enviar" src="/img/btn-enviar.svg"
+                        onclick="valideishan()">
+                    <input type="image" id="borrador" class="btn-img" alt="Borrar" src="/img/btn-borrar.svg"
+                        onclick="document.formie.reset();">
+                </div>
+            </form>
+        </main>
+
+
+        <footer></footer>
+
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/contacto.js"></script>
+</body>
+
+</html>

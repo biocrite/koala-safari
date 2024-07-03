@@ -2,68 +2,51 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseñas de Koala Safari</title>
-
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Koala Mundia</title>
+    <link rel="stylesheet" href="/css/portal.css">
 
 </head>
 
 <body>
-    <h1>Reseñas de Safari</h1>
 
-    <h2>Dejar Comentario</h2>
+    <div class="wrapper" id="wrapper">
 
-    <!--Formulario para un nuevo comentario-->
-    <form id="form-crear-posteo">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" required>
-        <br>
-        <label for="paquete">Paquete</label>
-        <select name="paquete" id="paquete" required>
-            <option value="Rojo">Rojo</option>
-            <option value="Naranja">Naranja</option>
-            <option value="Violeta">Violeta</option>
-        </select>
-        <br />
-        <label for="valoracion">Valoracion</label>
-        <select name="valoracion" id="valoracion" required>
-            <option value="5">★★★★★</option>
-            <option value="4">★★★★</option>
-            <option value="3">★★★</option>
-            <option value="2">★★</option>
-            <option value="1">★</option>
-        </select>
-        <br>
-        <label for="comentario">Comentario</label>
-        <textarea name="comentario" id="comentario"></textarea>
-        <br>
-        <button type="submit">Enviar Comentario</button>
-    </form>
+        <header></header>
 
-    <!-- Tabla de reseñas realizadas y acciones-->
-    <table>
-        <thead>
-            <tr>
-                <th>Fecha</th>
-                <th>Nombre</th>
-                <th>Paquete</th>
-                <th>Valoracón</th>
-                <th>Comentario</th>
-                <th>Opciones</th>
-            </tr>
-        </thead>
-        <tbody id="body-tabla-posteos">
-        </tbody>
-    </table>
+        <main>
+            <h1>¡Bienvenidx a Koala Mundia!</h1>
 
+            <figure class="dimmereable">
+                <img src="/img/galeria/02.jpg" alt="Bella Durmiente">
+                <figcaption>Los koalas son muy lindos.<br>¿Tú también lo eres?</figcaption>
+            </figure>
 
-    <!-- AXIOS -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <p>Sumérgete en el fascinante mundo de los koalas con Koala Mundia. Nuestro sitio web es tu destino
+                definitivo para descubrir todo lo relacionado con estos adorables marsupiales, desde información
+                educativa hasta imágenes encantadoras y mucho más.</p>
 
-    <script src="js/index.js"></script>
+            <div class="page-btn-container">
+                <div class="page-btn"><a href="/pages/galeria.html"><img src="/img/galeria.png" alt="Galeria"></a></div>
+                <div class="page-btn"><a href="/pages/koala-curiosidades.html"><img src="/img/curiosidades.png" alt="Curiosidades"></a></div>
+                <div class="page-btn"><a href="/pages/koala-nombres.html"><img src="/img/koala-nombres.png" alt="¿Cuál es tu Koala Nombre?"></a></div>
+                <div class="page-btn"><a href="/pages/koala-tv.html"><img src="/img/koala-tv.png" alt="Koala TV"></a></div>
+                <div class="page-btn"><a href="/pages/quienes-somos.html"><img src="/img/quienes-somos.png" alt="Quiénes somos"></a></div>
+                <div class="page-btn"><a href="/pages/contacto.html"><img src="/img/contacto.png" alt="Contacto"></a></div>
+            </div>
 
+            <p>¡Explora Koala Mundia hoy mismo y descubre la belleza y la fascinación de estos adorables marsupiales!
+            </p>
+
+        </main>
+
+        <footer></footer>
+
+    </div>
+
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

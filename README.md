@@ -2,4 +2,6 @@
 
 Entrega BackEnd - Grupodieci8cho
 
-mediante mySQL (koala_safari.sql)
+Página para acceder al formulario y fetch: /pages/resenas.html
+
+Mediante mySQL (koala_safari.sql)

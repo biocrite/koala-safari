@@ -1,0 +1,82 @@
+@import url("pages.css");
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑    Estilos básicos para la galería (mobile-first)    ⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+.galeriaWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeriaItem {
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    background-color: var(--galeria-item-bgcolor1);
+    border-radius: var(--border-radius);
+    margin: 1% 0;
+    cursor: pointer;
+    border: var(--main-border);
+    border-color: transparent;
+}
+
+.galeriaItem:nth-of-type(even) {
+    background-color: var(--galeria-item-bgcolor2);
+    color: white;
+}
+
+.galeriaItem:hover {
+    background-color: var(--galeria-item-hover-bgcolor);
+    color: var(--galeria-item-hover-color);
+    border-color: gold;
+}
+
+.galeriaItem img, .galeriaItem figcaption {
+    flex: .5;
+    align-content: center;
+    margin: .5rem;
+}
+
+.galeriaItem img {
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑    Media Query para Tablets y Escritorios  ⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+/*⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑⁑*/
+
+/* celulares */
+@media screen and (width <=480px) {}
+
+/* tablets */
+@media screen and (480px < width <= 800px) {
+    .galeriaItem {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .galeriaItem * {
+        flex: 1;
+        width: 50%;
+    }
+
+    .galeriaItem:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+/* escritorios */
+@media screen and (800px < width) {
+    .galeriaItem {
+        width: 32%; /* Fracción de cuántas imágenes por fila */ 
+    }
+
+}
