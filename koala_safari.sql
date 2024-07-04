@@ -29,12 +29,12 @@ CREATE TABLE `comentarios` (
   `paquete` varchar(45) DEFAULT NULL,
   `valoracion` int DEFAULT NULL,
   `comentario` text,
-  `titulo` text,
-  `contenido` text,
-  `createdAt` text,
-  `updatedAt` text,
+  `titulo` varchar(45) DEFAULT NULL,
+  `contenido` varchar(45) DEFAULT NULL,
+  `updatedAt` varchar(45) DEFAULT NULL,
+  `createdAt` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +43,7 @@ CREATE TABLE `comentarios` (
 
 LOCK TABLES `comentarios` WRITE;
 /*!40000 ALTER TABLE `comentarios` DISABLE KEYS */;
-INSERT INTO `comentarios` VALUES (4,'2024-06-27','Lucia','Rojo',5,'Me encantó!','feliz','contenido2',NULL,NULL),(5,'2024-06-27','Mario','Azul',5,'Qué mejor!','feliz','contenido2',NULL,NULL),(6,'2024-06-27','Ahmed','Rojo',3,'Estuvo bueno!','feliz','contenido2',NULL,NULL),(61,'2024-06-27','Gau','Naranja',3,'estuvo bien',NULL,NULL,'2024-06-28 00:14:00','2024-06-28 00:14:00');
+INSERT INTO `comentarios` VALUES (4,'2024-07-04','Lucia','Rojo',5,'¡Me encantó! Volvería cada 20 días si me dejaran!',NULL,NULL,'2024-07-04 17:03:07',NULL),(5,'2024-07-04','Mario','Violeta',5,'¡Mejor servicio de turismo koalero no existe!',NULL,NULL,'2024-07-04 17:02:46',NULL),(61,'2024-07-04','Gau','Naranja',3,'Estuvo bien pero quisiera haber visto ver más koalas y menos gente.',NULL,NULL,'2024-07-04 17:02:24',NULL);
 /*!40000 ALTER TABLE `comentarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-27 21:30:10
+-- Dump completed on 2024-07-04 14:05:20
