@@ -6,4 +6,4 @@ Página para acceder al formulario y fetch: `/pages/resenas.html`
 
 Base de Datos mediante mySQL (`koala_safari.sql`)
 
-Ver `/video_explicativo.mov` para una demostración.
+Ver `/video_explicativo.mp4` para una demostración.
